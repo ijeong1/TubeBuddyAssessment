@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TubeBuddyAssessment.Pages.SecondPage">
+    <ContentPage.Content>
+        <StackLayout Padding="20, 20, 20, 20">
+            <Picker Title="--Select--" ItemsSource="{Binding FunctionList}" ItemDisplayBinding="{Binding Title}" SelectedItem="{Binding SelectedFunctionItem}"/>
+            <Button Text="Click" Command="{Binding ButtonCommand}" IsEnabled="{Binding SelectionCheck}" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
